@@ -1,0 +1,540 @@
+.XLGrid {
+  display: grid;
+  grid-template-columns: 2.4fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 4px;
+  height: calc(100vh - 108px); /* Ajuste da altura */
+  width: calc(100vw - 10px); /* Ocupa toda a largura da tela */
+  margin: 2px;
+  margin-left: 5px;
+}
+
+.itemGrid{
+  background-color: aquamarine;
+}
+
+.itemGrid:first-child {
+  grid-row: span 4; /* Ocupa todas as linhas */
+  margin-bottom: 4px;
+}
+
+/*******************************************************/
+
+.MGrid{
+  display: grid;
+  grid-template-rows: 38% 24% 38%;
+  gap: 4px;
+  margin-bottom: 4px;
+}
+
+@media (max-width: 1814px) {
+  .MGrid {
+   grid-template-rows: 42% 20% 38%;
+  }
+}
+
+.itemGrid1{
+  background-color: aquamarine;
+}
+
+/*******************************************************/
+
+.SGrid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 4px;
+}
+
+.itemGrid2{
+  background-color: aquamarine;
+}
+
+/*******************************************************/
+
+.MGrid1{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 38% 38% 24%;
+  gap: 4px;
+  margin-bottom: 4px;
+}
+
+.itemGrid3{
+  background-color: aquamarine;
+}
+
+.itemGrid3:last-child {
+  grid-column: span 2; /* Ocupa todas as linhas */
+}
+
+.itemGrid, .itemGrid1, .itemGrid2, .itemGrid3{
+  border-radius: 30px;
+  padding: 20px;
+  
+}
+
+
+
+/*******************************************************/
+
+.acao1{
+  background-color: #F8FAF9;
+}
+.acao2{
+  background-color: #F8FAF9;
+}
+.acao3{
+  background-color: #FEF5F6;
+}
+.acao4{
+  background-color: #F8FAF9;
+}
+
+.acao1Div1 {
+  display: flex;
+  justify-content: space-between; /* Um no canto esquerdo, outro no direito */
+  align-items: flex-start; /* Alinha ao topo */
+  margin-bottom: 14px;
+}
+
+.acao1Div2{
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.perCen{
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.decimal{
+  font-size: 15px;
+  color: #686A6A;
+}
+
+.moeda{
+  margin-top: 16px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.moeda span{
+  color: #686A6A;
+}
+
+
+/*******************************************************/
+
+.cardVersaoFisica{
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+}
+
+.cardVersaoFisica h3{
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.cardVersaoFisica p{
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+/*******************************************************/
+
+.itemGrid2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.itemGrid2:nth-of-type(1){
+  background-color: #00aeed17;
+}
+.itemGrid2:nth-of-type(2){
+  background-color: #ff000017;
+}
+.itemGrid2:nth-of-type(3){
+  background-color: #F2F8FD;
+}
+.itemGrid2:nth-of-type(4){
+  background-color: #F7F7F7;
+}
+
+
+
+.itemGrid2:nth-of-type(1) img{
+  width: 40px;
+  margin-right: 4px;
+}
+
+.itemGrid2:nth-of-type(2) img{
+  width: 38px;
+
+}
+
+.itemGrid2:nth-of-type(3) img{
+  width: 38px;
+  margin-left: 2px;
+
+}
+
+.itemGrid2:nth-of-type(4) img{
+ width: 38px;
+}
+
+/*******************************************************/
+
+.audio{
+  background-image: url('../assets/montanha.jpg');
+  background-size: cover; /* Ajusta a imagem para cobrir toda a div */
+  background-position: center; /* Centraliza a imagem */
+  background-repeat: no-repeat; /* Evita repetição da imagem */
+  background-position: center -90px; /* Move a imagem 50px para cima */
+}
+
+@media (max-width: 1814px) {
+  .audio {
+   background-position: center -26px;
+  }
+}
+
+
+.audioInfo, .duration, .visualization, .audioDesc{
+  display: flex;
+
+}
+.audioDesc div{
+  display: flex;
+  align-items: baseline;
+}
+
+.duration, .visualization{
+  gap: 6px;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.duration img{
+  width: 15px;
+}
+
+.duration p{
+  font-size: 16px;
+  margin-top: 2px;
+  color: #686A6A;
+}
+
+
+.visualization p{
+  font-size: 16px;
+  margin-top: 2px;
+  color: #686A6A;
+}
+
+.audioDesc{
+  margin-top: 45px;
+  justify-content: space-between;
+}
+
+.audioDesc h3{
+  font-weight: 500;
+  font-size: 20px;
+  font-family: "Cardo";
+  color: #E3E3E3;
+
+}
+
+.audioDesc div{
+  margin-top: 30px;
+  gap: 10px;
+  align-items: center;
+}
+
+.audioDesc p{
+  color: #E3E3E3;
+  margin-top: 5px;
+  font-family: "Cardo";
+}
+
+/*******************************************************/
+
+.materia4{
+  background-color: #F8F4EC;
+}
+
+.materia4 h3{
+  font-size: 25px;
+  font-weight: 400;
+  margin-bottom: 17px;
+  font-family: "Cardo";
+}
+
+.materia4 p{
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.materia4Info{
+  display: flex;
+  gap: 20px;
+  margin-top: 15px;
+}
+
+.materia4Info div{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.materia4Info img{
+ width: 22px;
+}
+
+.materia4Info p{
+  margin-top: 3px;
+  font-size: 14px;
+ }
+
+ /*******************************************************/
+
+ .materia3{
+  background-color: #FFF;
+  box-shadow: inset 0px -7px 16px -10px rgba(0, 0, 0, 0.1);
+ }
+
+ .materia3Header{
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+ }
+
+ .materia3Header div{
+  display: flex;
+  align-items: center;
+
+ }
+
+ .mulherPerfil{
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+ }
+
+ .materia3Header div p{
+  font-size: 17px;
+  font-weight: 500;
+ }
+
+ .foguinho{
+  width: 25px;
+ }
+ 
+ .materia3 h2{
+   font-weight: 500;
+   margin-top: 30px;
+   margin-bottom: 25px;
+   font-family: "Cardo";
+ }
+
+ .materia3Resume{
+  margin-bottom: 25px;
+  font-weight: 500;
+  font-size: 18px;
+  color: #686A6A;
+}
+
+.materia3Info {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+
+.materia3Info div{
+  display: flex;
+  align-items: center;
+}
+
+.materia3Info p{
+  color: #686A6A;
+  font-weight: 500;
+  margin-left: 8px;
+  font-family: "Noto Serif Hentaigana";
+  font-size: 15px;
+  word-spacing: -3px; 
+}
+
+.xgm{
+  height: 35px;
+}
+ 
+
+/*******************************************************/
+
+.materia2{
+  background-image: url('../assets/universe.jpg');
+  background-size: cover; /* Ajusta a imagem para cobrir toda a div */
+  background-position: center; /* Centraliza a imagem */
+  background-repeat: no-repeat; /* Evita repetição da imagem */
+ 
+}
+
+.materia2Header{
+  display: flex;
+  gap: 20px;
+}
+
+.materia2Header p{
+ color: #d3d3d3
+}
+
+.materia2 h2{
+  margin-top: 210px;
+  font-weight: 500;
+  font-family: "Cardo";
+  color: #676767;
+}
+
+@media (max-width: 1814px) {
+  .materia2 h2{
+    margin-top: 230px;
+  }
+}
+
+.materia2Info{
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.materia2Info div{
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+
+.materia2Info p{
+  color: #676767;
+  font-weight: 500;
+  font-family: "Noto Serif Hentaigana";
+  font-size: 15px;
+  word-spacing: -3px; 
+}
+
+/*******************************************************/
+
+.materia {
+  background-image: linear-gradient(to bottom, rgb(239 236 226 / 15%) 16%, rgb(239 236 226 / 97%) 66%), url(/src/assets/ilustracao-libras.webp);
+  background-size: cover; /* Ajusta a imagem para cobrir toda a div */
+  background-position: center 20px; /* Centraliza a imagem */
+  background-repeat: no-repeat; /* Evita repetição da imagem */
+  background-color: #efece2d6;
+
+}
+
+.materiaHeader{
+  display: flex;
+  gap: 20px;
+  font-size: 18px;
+}
+
+.mH1P{
+  font-weight: 500;
+}
+
+.mH2P{
+  color: #676767;
+}
+
+.materiaCorpus{
+  margin-top: 350px;
+}
+
+.materiaCorpus h2{
+  font-size: 72px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.materiaCorpus h2 span{
+  background-color: #ff2c2c;
+  color: #fff;
+}
+
+.materiaResume{
+  margin-bottom: 25px;
+  font-weight: 500;
+  font-size: 18px;
+  color: #3B3B3B;
+}
+
+.materiaInfo{
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.materiaInfo div{
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+
+.materiaInfo p{
+  color: #3B3B3B;
+  font-weight: 500;
+  font-family: "Noto Serif Hentaigana";
+  font-size: 15px;
+  word-spacing: -3px; 
+  margin-top: -2px;
+}
+
+.materia2, 
+.materia3, 
+.materia4, 
+.materia, 
+.itemGrid2 {
+  cursor: pointer; /* Cursor de clique */
+  transition: background 0.3s, transform 0.2s; /* Animações suaves */
+  position: relative; /* Necessário para o ::after funcionar */
+}
+
+.materia2::after, 
+.materia3::after, 
+.materia4::after, 
+.materia::after, 
+.itemGrid2::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0); /* Inicialmente invisível */
+  transition: background 0.3s ease-in-out;
+}
+
+/* Quando passa o mouse, aplica a máscara escura */
+.materia2:hover::after, 
+.materia3:hover::after, 
+.materia4:hover::after, 
+.materia:hover::after, 
+.itemGrid2:hover::after {
+  background: rgba(0, 0, 0, 0.2); /* Camada escura sem alterar o conteúdo */
+}
+/* Efeito ao clicar */
+.materia2:active, 
+.materia3:active, 
+.materia4:active, 
+.materia:active, 
+.itemGrid2:active {
+  background-color: #004494; /* Cor ainda mais escura */
+  transform: scale(0.98); /* Leve redução ao clicar */
+}
+

@@ -1,0 +1,118 @@
+.header1 {
+  display: flex;
+  padding: 20px 30px;
+  align-items: center;
+  height: 104px;
+  justify-content: space-between;
+  position: relative; /* Permite posicionamento absoluto da logo */
+}
+
+/* Estilizando a logo */
+.logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%); /* Centraliza a logo */
+}
+
+.logo img {
+  height: 60px;
+}
+
+/* Botões e menus alinhados corretamente */
+.esq {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Ajuste de espaçamento */
+}
+
+.dir {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Ajuste de espaçamento */
+}
+
+/* ESTILOS BOTÃO RADIO NO HEADER */
+.radio {
+  width: fit-content;
+  background-color: black;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  padding: 5px 5px 5px 8px;
+  border-radius: 30px;
+  height: fit-content;
+  margin-right: 30px;
+}
+
+.headphone {
+  width: 25px;
+  background-color: white;
+}
+
+.ouvintes {
+  font-weight: 400;
+  color: white;
+  margin-top: 3px;
+}
+
+.playButton {
+  width: 30px;
+}
+
+/***********************************/
+
+/* ESTILOS BOTÃO NAV1 */
+.nav1 {
+  display: flex;
+  gap: 30px;
+}
+
+.nav1 button {
+  all: unset;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.nav1 p {
+  font-size: 18px;
+}
+
+.nav1 img {
+  width: 18px;
+}
+
+@media (max-width: 1500px) {
+  .nav1 {
+    display: none;
+  }
+}
+
+/***********************************/
+
+.assinatura {
+  all: unset;
+  padding: 10px;
+  height: fit-content;
+  display: flex;
+  gap: 5px;
+  align-items: baseline;
+  border: 1px solid black;
+  border-radius: 30px;
+}
+
+.assinatura img {
+  height: 15px;
+}
+
+.menu {
+  margin-left: 30px;
+  height: 30px;
+}
+
+.menu,
+.assinatura,
+.nav1 button,
+.playButton{
+  cursor: pointer; 
+}
